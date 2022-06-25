@@ -1,5 +1,7 @@
 # ICD/ICPC Searchbar
 
+![Screenshot](Screenshot.png)
+
 ## Why?
 Medical professionals often have the task to select one or more diagnoses, reasons for encounter, treatments, etc. in user interfaces.
 
