@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Train: Data/APIs 1</title>
+  </head>
+  <body>
+    <h1>Fetch a Rainbow</h1>
+    <img src="" id="rainbow" width="480" />
+    <script>
+      console.log('about to fetch a rainbow');
+
+      getICPCList()
+        // .then(response => {
+        //   console.log('yay');
+        // })
+        // .catch(error => {
+        //   console.log('error!');
+        //   console.error(error);
+        // });
+
+      // async function getICPCList() {
+      //   const response = await fetch('http://127.0.0.1:5000/data');
+      //   console.log("response")
+      //   console.log(response)
+      //   const data = await response.json();
+      //   console.log("data")
+      //   console.log("type=" + typeof data)
+      //   console.log(data)
+
+      // }
+    function getICPCList() {
+      fetch('http://127.0.0.1:5000/data')
+    .then(response => response.json())
+    .then(data => console.log(data));
+    }
+
+    </script>
+  </body>
+</html>
