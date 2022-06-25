@@ -44,7 +44,7 @@ export default function Tags() {
 				value={autocompleteValues}
 				id="tags-standard"
 				options={ICPCCodes}
-				getOptionLabel={(option) => option.title} // Based on current value in input textfield check if a an option is selected.
+				getOptionLabel={(option) => option["ICPC Titel"]} // Based on current value in input textfield check if a an option is selected.
 				onChange={handleChange}
 				renderInput={(params) => ( // Render the option, use `getOptionLabel` by default.
 					// https://mui.com/material-ui/react-text-field/

@@ -4,9 +4,13 @@ import datetime
 import json
 import datetime
 from flask import jsonify
+import pandas as pd
+from definitions import ROOT_DIR
+import os
 
-
-x = datetime.datetime.now()
+json_file_name = os.path.join(ROOT_DIR, "ICPC.json")
+f = open(json_file_name)
+ICPC = json.load(f)
 
 # Initializing flask app
 app = Flask(__name__)
@@ -17,19 +21,12 @@ top100Films = [
   { "title": "The Godfather: Part II", "year": 1974 },
   { "title": "The Dark Knight", "year": 2008 },
 ]
-# print(jsonify(top100Films))
+
 # Route for seeing a data
 @app.route('/data')
 def get_time():
-  
-    # Returning an api for showing in  reactjs
-  return jsonify(top100Films)
-    # return {
-    #     'name':"Kelvin", 
-    #     "age":"22",
-    #     "date":x, 
-    #     "programming":"python"
-    #     }
+  return ICPC
+
      
 # Running app
 if __name__ == '__main__':
