@@ -9,7 +9,7 @@ For more than a century, the International Classification of Diseases (ICD) has 
 [Source](https://www.who.int/standards/classifications/classification-of-diseases)
 
 ## ICPC
-ICPC classifies patient data and clinical activity in the domains of General/Family Practice and primary care, taking into account the frequency distribution of problems seen in these domains. It allows classification of the patient’s reason for encounter (RFE), the problems/diagnosis managed, interventions, and the ordering of these data in an episode of care structure
+ICPC (International Classification of Primary Care) classifies patient data and clinical activity in the domains of General/Family Practice and primary care, taking into account the frequency distribution of problems seen in these domains. It allows classification of the patient’s reason for encounter (RFE), the problems/diagnosis managed, interventions, and the ordering of these data in an episode of care structure
 
 [Source](https://www.who.int/standards/classifications/other-classifications/international-classification-of-primary-care)
 
