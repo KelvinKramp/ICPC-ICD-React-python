@@ -21,7 +21,7 @@ git clone https://github.com/KelvinKramp/ICPC-ICD-React-python.git
 ### Change configuration
 In ba/icpc.py change url to your pdf with an ICD/ICPC or other classification. The current one is a Dutch version used in primary care, but there are more languages online.  
 
-### Start backend server:
+### Start backend server
 Install python and pip and follow the following steps:
 ```bash
 cd ICPC-ICD-React-python/ba
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 python3 api.py
 ```
 
-## Start frontend 
+### Start frontend 
 Install react, yarn, material ui and start yarn in main directory:
 
 ```bash
