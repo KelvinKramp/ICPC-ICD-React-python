@@ -2,9 +2,6 @@
 
 ![Screenshot](Screenshot2.png)
 
-## Why?
-Medical professionals often have the task to select one or more diagnoses, reasons for encounter, treatments, etc. in user interfaces.
-
 ## What is the ICD? 
 "For more than a century, the International Classification of Diseases (ICD) has been the basis for comparable statistics on causes of mortality and morbidity between places and over time. ICD serves a broad range of uses globally and provides critical knowledge on the extent, causes and consequences of human disease and death worldwide via data that is reported and coded with the ICD. Clinical terms coded with ICD are the main basis for health recording and statistics on disease in primary, secondary and tertiary care, as well as on cause of death certificates. These data and statistics support payment systems, service planning, administration of quality and safety, and health services research. Diagnostic guidance linked to categories of ICD also standardizes data collection and enables large scale research."
 
@@ -34,7 +31,26 @@ python3 api.py
 ```
 
 ## Start frontend 
-Install yarn, react, material ui and start yarn in main directory:
+Install react, yarn, material ui and start yarn in main directory:
+
 ```bash
+npm install @mui/material @emotion/react @emotion/styled
+yarn add @material-ui/lab
+yarn add @material-ui/core
 yarn start
 ```
+
+## Goals
+- More effient and accurate registration of reasons of encounter.  
+
+
+## To do
+- Include selection of attending physician.
+- Extent the title of items to code + name. 
+- Add buttons EPD + EVS.
+- Add department info. 
+- Add patient info.
+- Group the options based on code (https://mui.com/material-ui/react-autocomplete/).
+- Remove irrelevant codes for specified population.
+- If "not in list", let creatable box popup.  
+

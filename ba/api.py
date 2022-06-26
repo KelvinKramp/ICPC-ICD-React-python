@@ -11,22 +11,36 @@ import os
 json_file_name = os.path.join(ROOT_DIR, "ICPC.json")
 f = open(json_file_name)
 ICPC = json.load(f)
+f.close()
+
+locations = [
+  { 'id':1, 'name': 'Location 1'},
+  { 'id':2, 'name': 'Location 2'},
+  ]
+
+departments = [
+  { 'id':1, 'name': 'Department 1'},
+  { 'id':2, 'name': 'Department 2'},
+  ]
 
 # Initializing flask app
 app = Flask(__name__)
   
-top100Films = [
-  { "title": "The Shawshank Redemption", "year": 1994 },
-  { "title": "The Godfather", "year": 1972 },
-  { "title": "The Godfather: Part II", "year": 1974 },
-  { "title": "The Dark Knight", "year": 2008 },
-]
 
-# Route for seeing a data
+# Route for RFEs
 @app.route('/data')
-def get_time():
+def return_ICPC():
   return ICPC
 
+# Route for Locations
+@app.route('/locations')
+def return_locations():
+  return jsonify(locations)
+
+# Route for Departments
+@app.route('/departments')
+def return_departments():
+  return jsonify(departments)
      
 # Running app
 if __name__ == '__main__':
